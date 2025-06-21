@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>🎮 Rock Paper Scissors</h2>
+
+  <label for="pointLimit">Set Point Limit (0-20):</label>
+  <input type="number" id="pointLimit" min="0" max="20" value="5"><br><br>
+
+  <div class="buttons">
+    <button onclick="play('Rock')">🪨 Rock</button>
+    <button onclick="play('Paper')">📄 Paper</button>
+    <button onclick="play('Scissors')">✂️ Scissors</button>
+  </div>
+
+  <div class="scoreboard">
+    <p><strong>You:</strong> <span id="userScore">0</span></p>
+    <p><strong>Computer:</strong> <span id="computerScore">0</span></p>
+  </div>
+
+  <div class="result">
+    <p><strong>You Chose:</strong> <span id="user-choice">-</span></p>
+    <p><strong>Computer Chose:</strong> <span id="computer-choice">-</span></p>
+    <p><strong>Result:</strong> <span id="result">-</span></p>
+  </div>
+
+  <button id="restartBtn" onclick="restartGame()" style="display:none;">🔁 Play Again</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
